@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+body{
+    background-color:lightgrey;
+}
+.container{
+    padding: 10px;
+}
+
+nav{
+    background-color: khaki;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.people ul li{
+    padding-left: 20px;
+    list-style: none;
+}
