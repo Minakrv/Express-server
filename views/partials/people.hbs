@@ -3,7 +3,7 @@
     {{#if listExists}}
 <ul>
             {{#each people}}
-                <li>{{this.name}}</li>
+                <li>{{this.name}}: {{this.email}} in {{this.address.zipcode}} </li>
             {{/each}}
         </ul>
     {{/if}}

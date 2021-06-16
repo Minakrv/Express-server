@@ -5,6 +5,7 @@ const getPeople = require('./lib/people');
 const path = require ('path');
 const { dirname } = require("path");
 const app = express();
+const getPlaceholder = require('./lib/getplaceholder');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.engine('hbs', hbs({
@@ -15,8 +16,8 @@ app.engine('hbs', hbs({
 
 app.set('view engine', '.hbs');
 
-app.get("/", (req, res) => {
-  let people = getPeople();
+app.get("/", async(req, res) => {
+  let people =await getPlaceholder();
   console.log(people);
   res.render('index', {people, listExists: true});
 });
